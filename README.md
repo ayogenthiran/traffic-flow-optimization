@@ -18,31 +18,39 @@ This repository contains the implementation of a dynamic traffic light control s
    ```bash
    git clone git@github.com:ayogenthiran/traffic-flow-optimization.git
    cd traffic-flow-optimization
-3. Install Python dependencies:
-''' bash
-  pip install -r requirements.txt
+   
+Install Python dependencies:
+pip install -r requirements.txt
 
 Running the Simulation
 You can run the SUMO simulation with different step lengths using the following commands:
+
 1. Run SUMO with a step length of 0.1:
-''' bash
-    sumo-gui -c sumo_config.sumocfg --step-length 0.05
+
+      sumo-gui -c sumo_config.sumocfg --step-length 0.1
+
 2. Run SUMO with a step length of 0.05:
-''' bash
-    sumo-gui -c sumo_config.sumocfg --step-length 0.05
+
+      sumo-gui -c sumo_config.sumocfg --step-length 0.05
+
+3. Run SUMO with a step length of 0.01:
+
+      sumo-gui -c sumo_config.sumocfg --step-length 0.01
+
 
 Training and Testing the Model
 
 1. Train the model:
-''' bash
-    python training_main.py
+
+      python training_main.py
 
 2. Test the model:
-''' bash
-    python testing_main.py
+
+      python testing_main.py
 
 Report
 For detailed information about the project, including the methodology, results, and analysis, please refer to the following documents:
 
-Project Proposal
-Final Report
+   Project Proposal
+   
+   Final Report
