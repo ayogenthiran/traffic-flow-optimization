@@ -12,38 +12,37 @@ This repository contains the implementation of a dynamic traffic light control s
 
 ### Installation
 
-1. **Install SUMO:**
-   Follow the instructions on the [SUMO website](https://www.eclipse.org/sumo/) to install SUMO and configure it on your system.
+1. **Install SUMO:** Follow the instructions on the [SUMO website](https://www.eclipse.org/sumo/) to install SUMO and configure it on your system.
 
 2. **Clone the repository:**
    ```bash
    git clone git@github.com:ayogenthiran/traffic-flow-optimization.git
    cd traffic-flow-optimization
-
+3. Install Python dependencies:
+''' bash
+  pip install -r requirements.txt
 
 Running the Simulation
 You can run the SUMO simulation with different step lengths using the following commands:
-
 1. Run SUMO with a step length of 0.1:
-	sumo-gui -c sumo_config.sumocfg --step-length 0.1
-
+''' bash
+    sumo-gui -c sumo_config.sumocfg --step-length 0.05
 2. Run SUMO with a step length of 0.05:
-
-	sumo-gui -c sumo_config.sumocfg --step-length 0.05
+''' bash
+    sumo-gui -c sumo_config.sumocfg --step-length 0.05
 
 Training and Testing the Model
 
 1. Train the model:
-
-	python training_main.py
+''' bash
+    python training_main.py
 
 2. Test the model:
-	python testing_main.py
-
+''' bash
+    python testing_main.py
 
 Report
-
 For detailed information about the project, including the methodology, results, and analysis, please refer to the following documents:
 
-	Project Proposal
-	Final Report
+Project Proposal
+Final Report
